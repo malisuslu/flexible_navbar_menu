@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-width: 100%;
+}
+
+.navbar img {
+    height: 25px;
+    width: auto;
+    margin: 0;
+    padding: 0 3px;
+}
+
+.left img {
+    height: 30px;
+    width: auto;
+}
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly;
+    top: 1%;
+}
+
+.navbar > * > * {
+    margin: 0;
+    padding: 0;
+}
+
+.left {
+    background-color: #BCCDDC;
+    width: 100%;
+}
+
+.middle {
+    background-color: #EBF7FF;
+    border-radius: 10%;
+    box-shadow:  0 0 10px rgba(0,0,0,0.5);
+    max-width: 300px;
+    min-width: 150px;
+    width: calc((15% - 150px) * 10000);
+}
+
+.middle > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-content: center;
+    text-align: center;
+    border-radius: 10%;
+    margin: 0;
+    padding: 0;
+}
+
+.middle > ul > li {
+    white-space: nowrap;
+    padding: 10px 0px;
+    font-size: 1em;
+    font-weight: 800;
+    min-width: calc(100% / 3);
+    max-width: 100%;
+    width: calc((225px - 100%) * 1000);
+    cursor: pointer;
+}
+
+.middle > ul > li:hover {
+    background:
+        linear-gradient(red, transparent),
+        linear-gradient(to top left, lime, transparent),
+        linear-gradient(to top right, blue, transparent);
+    background-blend-mode: screen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.middle > ul > li:nth-child(1):hover {
+    background:
+        linear-gradient(red, transparent),
+        linear-gradient(to top left, lime, transparent),
+        linear-gradient(to top right, blue, transparent);
+    background-blend-mode: screen;
+}
+
+.middle > ul > li:nth-child(2):hover {
+    background:
+        repeating-linear-gradient(
+            -45deg,
+            transparent 0,
+            transparent 40%,
+            dodgerblue 0,
+            dodgerblue 50%
+       ),
+       repeating-linear-gradient(
+            45deg,
+            transparent 0,
+            transparent 40%,
+            tomato 0,
+            tomato 50%
+        ),
+        repeating-linear-gradient(
+            transparent 0,
+            transparent 40%,
+            gold 0,
+            gold 50%
+        ), white;
+    background-blend-mode: multiply;
+    background-size: 25px 25px;
+}
+
+.middle > ul > li:nth-child(3):hover {
+    background:
+        radial-gradient(
+            khaki 10px,
+            transparent 0,
+            transparent 100%
+        ),
+        radial-gradient(
+            skyblue 10px,
+            transparent 0,
+            transparent 100%
+        ),
+        radial-gradient(
+            pink 10px,
+            transparent 0,
+            transparent 100%
+        ), snow;
+    background-blend-mode: multiply;
+    background-size: 25px 25px;
+    background-position: 0 0, 33px 33px, -33px -33px;
+}
+
+.middle > ul > li:nth-child(1):hover > a {
+    color: white;
+}
+
+.middle > ul > li:nth-child(2):hover > a {
+    color: rgb(255, 0, 242);
+}
+
+.middle > ul > li:nth-child(3):hover > a {
+    color: blue;
+}
+
+.right {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    background-color: #48A6E9;
+}
+
+.right > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right > ul > li {
+    padding: 0 1%;
+    margin: auto 0;
+    align-items: center;
+    align-content: center;
+}
+
+.right > ul > li:hover {
+    background-color: #d2ffdb;
+    border-radius: 10%;
+    box-shadow:  0 0 10px rgba(0,0,0,0.5);
+    transform: scale(1.2);
+}
+
